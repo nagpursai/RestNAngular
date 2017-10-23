@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Ticket Tracking</title>
+<link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" >
+<link rel="stylesheet" href="../../assets/css/sighin.css">
+<link rel="stylesheet" href="../../assets/css/ticket.css">
+<link rel="stylesheet" type="text/css" href="../../bower_components/angular-ui-grid/ui-grid.min.css">
+<link rel="stylesheet" type="text/css" href="../../bower_components/ng-table/dist/ng-table.css">
+
+</head>
+<body ng-init="getEmployeeDetails()">
+<nav class="navbar navbar-default navbar-custom">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#/" class="navbar-brand">Home</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#/" ng-click="viewReport()">Report</a></li>
+			</ul>
+			<div class="div-welcome pull-right">
+				<a href="#/" ng-click="logout()">Logout</a>
+			</div>
+				
+			
+		</div>
+	</nav>
+	
+	<div class="container">
+		
+			<div class="container">
+				<table ng-table="employeeList"
+					class="table table-bordered table-hover table-condensed editable-table demoTable"
+					ng-form="tableForm" disable-filter="isAdding"
+					demo-tracked-table="tableTracker">
+						<colgroup>
+							<col width="7%" />
+							<col width="3%" />
+							<col width="4%" />
+							<col width="7%" />
+							<col width="5%" />
+							<col width="20%" />
+							<col width="6%" />
+							<col width="5%" />
+							<col width="5%" />
+							<col width="15%" />
+							<col width="5%" />
+							
+						</colgroup>
+						<tr ng-repeat="row in $data" ng-form="rowForm" demo-tracked-table-row="row">
+							 <td title="'Emplyee Id'" filter="{empId: 'text'}" sortable="'empId'" id="" ng-switch="row.isEditing" ng-class="empId.$dirty ? 'bg-warning' : ''" ng-form="id" demo-tracked-table-cell>
+	        			    <span ng-switch-default class="editable-text">{{row.empId}}</span>
+	        			    
+										</td>
+						
+							 <td title="'First Name'" filter="{firstName: 'text'}" sortable="'firstName'" ng-switch="row.isEditing" ng-class="firstName.$dirty ? 'bg-warning' : ''" ng-form="releaseVersion" demo-tracked-table-cell>
+					            <span ng-switch-default class="editable-text">{{row.firstName}}</span>
+					           
+					     </td>
+							
+							 <td title="'Last Name'" filter="{lastName: 'text'}" sortable="'lastName'" ng-switch="row.isEditing" ng-class="category.$dirty ? 'bg-warning' : ''" ng-form="category" demo-tracked-table-cell>
+					            <span ng-switch-default class="editable-text">{{row.lastName}}</span>
+					       
+					          </td>
+						
+						
+						   <td title="'Ticket Type'" filter="{email: 'text'}" sortable="'email'" ng-switch="row.isEditing" ng-class="email.$dirty ? 'bg-warning' : ''" ng-form="email" demo-tracked-table-cell>
+	        			    <span ng-switch-default class="editable-text">{{row.email}}</span>
+	        			  
+             			</td>
+             			
+             			 <td title="'Phone'" filter="{phone: 'number'}" sortable="'phone'" ng-switch="row.isEditing" ng-class="phone.$dirty ? 'bg-warning' : ''" ng-form="ticketNumber" demo-tracked-table-cell>
+	        			    <span ng-switch-default class="editable-text">{{row.phone}}</span>
+	        			
+             			</td>
+             			
+				        </tr>
+            		
+				</table>
+			</div>
+			</div>	
+</body>
+</html>

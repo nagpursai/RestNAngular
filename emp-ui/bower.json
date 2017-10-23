@@ -1,0 +1,33 @@
+{
+  "name": "emp-ui",
+  "authors": [
+    "Employee"
+  ],
+  "description": "Employee Tracking System UI Application",
+  "main": "emp",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "angularjs#^1.6.0",
+    "angular-ui": "^0.4.0",
+    "angular-sanitize": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-ui-router": "^0.3.0",
+    "angular-ui-grid": "3.1.1",
+    "angular-resource": "^1.5.6",
+    "restangular": "^1.5.2",
+    "underscore": "^1.8.3",
+    "ng-table": "^0.8.3",
+    "angularjs-datepicker": "^2.1.6",
+    "components-font-awesome": "^4.6.3",
+    "angular-spinner": "^1.0.1"
+  }
+}

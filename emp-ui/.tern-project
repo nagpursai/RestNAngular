@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+{"libs":["ecma5","browser","jquery"],"plugins":{"node":{},"chrome-extension":{},"angular":{},"bootstrap":{},"jquery-ui1-12":{}},"ecmaVersion":5,"ide":{}}
+=======
+{
+  "libs": [
+    "ecma5",
+    "browser",
+    "jquery"
+  ],
+  "plugins": {
+    "node": {
+      
+    },
+    "chrome-extension": {
+      
+    },
+    "angular": {
+      
+    },
+    "bootstrap": {
+      
+    },
+    "jquery-ui1-12": {
+      
+    }
+  },
+  "ecmaVersion": 5
+}
+>>>>>>> 64bad14d212d9c818998ecd6531506acb9f22391
